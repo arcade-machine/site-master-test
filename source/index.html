@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание, "Site-master"</title>
+    <link href="CSS/styles.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    <div class="main-header__wrapper">
+        <img class="main-header__logo" src="img/logo.png" width="115" height="28">
+    </div>
+    <nav class="main-header__navigation navigation">
+        <ul>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Новости</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Статьи</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Объект</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Доставка</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main-page">
+    <section class="main-page__main-content main-content">
+        <section class="main-page__slider slider">
+            <ul class="slider__social social">
+                <li class="social__item social__item--facebook">
+                    <p class="hidden">Мы в фейсбуке</p>
+                </li>
+                <li class="social__item social__item--twitter">
+                    <p class="hidden">Мы в твиттере</p>
+                </li>
+            </ul>
+            <input type="radio" class="slider__radio slider__radio--one hidden" name="slider" id="slider-one" checked>
+            <input type="radio" class="slider__radio slider__radio--two hidden" name="slider" id="slider-two">
+            <input type="radio" class="slider__radio slider__radio--three hidden" name="slider" id="slider-three">
+            <input type="radio" class="slider__radio slider__radio--four hidden" name="slider" id="slider-four">
+            <input type="radio" class="slider__radio slider__radio--five hidden" name="slider" id="slider-five">
+            <section class="slider-controls">
+                <label class="slider-controls__item sliders-controls__item--one" for="slider-one" tabindex="0"></label>
+                <label class="slider-controls__item sliders-controls__item--two" for="slider-two" tabindex="0"></label>
+                <label class="slider-controls__item sliders-controls__item--three" for="slider-three" tabindex="0"></label>
+                <label class="slider-controls__item sliders-controls__item--four" for="slider-four" tabindex="0"></label>
+                <label class="slider-controls__item sliders-controls__item--five" for="slider-five" tabindex="0"></label>
+            </section>
+            <ul>
+                <li class="slider__item slider__item--one">
+                    <img class="slider__image slider__image--one" src="img/slider.png" width="630" height="311">
+                </li>
+                <li class="slider__item slider__item--two">
+                    <p class="slider__content">Второй слайдер</p>
+                </li>
+                <li class="slider__item slider__item--three">
+                    <p class="slider__content">Третий слайдер</p>
+                </li>
+                <li class="slider__item slider__item--four">
+                    <p class="slider__content">Четвертый слайдер</p>
+                </li>
+                <li class="slider__item slider__item--five">
+                    <p class="slider__content">Пятый слайдер</p>
+                </li>
+            </ul>
+        </section>
+        <section class="main-page__content content">
+            <h1 class="content__title title">Phasellus viverra nulla ut metus varius laoreet ultricies nisi vel augue</h1>
+            <h2 class="content__header">Aenean vulputate eleifend tellus</h2>
+            <p class="content__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </section>
+        <div class="main-page__wrapper">
+            <section class="main-page__item item">
+                <img class="item__image" src="img/image.png" width="280" height="226">
+                <div class="item__wrapper">
+                    <h3 class="item__header title">Lorem ipsum dolor sit amet consectetuer</h3>
+                    <p class="item__content">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Aliquam lorem ante, dapibus in, viverra quis.</p>
+                </div>
+            </section>
+            <section class="main-page__item item">
+                <img class="item__image" src="img/image.png" width="280" height="226">
+                <div class="item__wrapper">
+                    <h3 class="item__header title">Lorem ipsum dolor sit amet consectetuer</h3>
+                    <p class="item__content">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Aliquam lorem ante, dapibus in, viverra quis.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <aside class="main-page__aside aside">
+        <section class="aside__header">
+            <h3 class="aside__header title">Lorem ipsum dolor</h3>
+            <p class="aside__info">Donec pede justo</p>
+            <p class="aside__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+        </section>
+        <section class="aside__subscribe subscribe">
+            <label class="subscribe__header" for="email">Подписка</label>
+            <form class="subscribe__form">
+                <input type="email" id="email" class="subscribe__input" placeholder="Укажите Ваш email">
+                <button class="subscribe__button" type="submit">Подписаться</button>
+            </form>
+            <p class="subscribe__info">Подпишитесь на получение наших новостей и Вы сможете быть всегда в курсе интересного.</p>
+        </section>
+        <section class="aside__interesting interesting">
+            <h3 class="interesting__header title">Интересное</h3>
+            <ul>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+                <li class="interesting__item">
+                    <h3 class="interesting__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
+                    <p class="interesting__date">10 марта 2018</p>
+                </li>
+            </ul>
+        </section>
+        <section class="aside__tags tags">
+            <h3 class="tags__header title">Теги</h3>
+            <ul>
+                <li class="tags__item">
+                    <p class="tags__content">История</p>
+                </li>
+                <li class="tags__item">
+                    <p class="tags__content">Оружие</p>
+                </li>
+                <li class="tags__item">
+                    <p class="tags__content">Артефакты</p>
+                </li>
+            </ul>
+        </section>
+    </aside>
+</main>
+
+</body>
+</html>

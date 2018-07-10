@@ -1,0 +1,18 @@
+.slider-controls {
+  width: 96px;
+  position: absolute;
+  bottom: 17px;
+  left: 45%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.slider-controls__item {
+  width: 14px;
+  height: 14px;
+  display: block;
+  transition: all .4s ease-in-out;
+  background-image: url("../img/icons/radio.svg");
+  background-size: cover;
+}
