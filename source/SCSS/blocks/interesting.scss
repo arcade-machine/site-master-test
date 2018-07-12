@@ -1,0 +1,53 @@
+.interesting {
+  margin-bottom: 40px;
+}
+
+.interesting__header {
+  margin-bottom: 20px;
+}
+
+.interesting ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.interesting__item {
+  padding-left: 15px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-image: url("../img/icons/icon-li.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.interesting__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 200;
+  color: #3a3a3a;
+}
+
+.interesting__date {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans Italic", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 20px;
+  color: #7e7e7e;
+}

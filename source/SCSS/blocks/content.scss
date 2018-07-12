@@ -4,9 +4,11 @@
   padding-left: 35px;
   padding-right: 10px;
   margin-bottom: 25px;
+  border: 1px solid #d7d7d7;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
   background-image: url("../img/content--background.png");
 }
 

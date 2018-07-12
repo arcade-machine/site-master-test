@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  display: none;
+  z-index: 2;
 }
 
 .social__item {
@@ -10,5 +10,29 @@
   height: 48px;
   margin-bottom: 8px;
   border-radius: 50%;
+  position: relative;
   background-color: #f26c4f;
+  cursor: pointer;
+
+  &--facebook::after {
+    content: "";
+    width: 11px;
+    height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    background-image: url("../img/icons/facebook.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--twitter::after {
+    content: "";
+    width: 26px;
+    height: 18px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    background-image: url("../img/icons/twitter.svg");
+    background-repeat: no-repeat;
+  }
 }

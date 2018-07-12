@@ -1,0 +1,31 @@
+.pop-up {
+  width: 97%;
+  height: 51px;
+  padding-top: 13px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 23px;
+  left: 5px;
+  display: none;
+  background-color: #ffffff;
+}
+
+.pop-up--open {
+  display: block;
+}
+
+.pop-up__content {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #3a3e3f;
+}
+
+@media (max-width: 750px) {
+  .pop-up {
+    width: 98%;
+  }
+}

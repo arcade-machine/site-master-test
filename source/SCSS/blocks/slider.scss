@@ -4,8 +4,9 @@
 }
 
 .slider__item {
-  width: 630px;
-  height: 311px;
+  width: 100%;
+  height: auto;
+  min-height: 148px;
   position: relative;
   display: none;
   transition: all .4s ease-in-out;
@@ -19,6 +20,13 @@
 
 .slider__social {
   position: absolute;
+  left: 10%;
+  bottom: 20px;
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
 }
 
 .slider__item {
@@ -84,5 +92,11 @@
 
   &--five:checked ~ .slider-controls .sliders-controls__item--five {
     background-image: url("../img/icons/radio-checked.svg");
+  }
+}
+
+@media (max-width: 750px) {
+  .slider__item{
+    margin: 0 auto;
   }
 }

@@ -30,12 +30,18 @@
 }
 
 body {
+  min-width: 320px;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
   background-image: url("../img/body--background.png");
+  overflow-x: hidden;
+}
+
+html {
   overflow-x: hidden;
 }
 
@@ -46,4 +52,31 @@ body {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.01em;
+  color: #3a3e3f;
+}
+
+.arrow-top {
+  &::before {
+    content: "";
+    width: 33px;
+    height: 17px;
+    position: absolute;
+    top: -17px;
+    left: 72px;
+    background-image: url("../img/arrow.png");
+    background-size: cover;
+  }
+}
+
+.bottom-scroll {
+  &::after {
+    content: "";
+    width: 98%;
+    height: 7px;
+    position: absolute;
+    bottom: -8px;
+    left: 5px;
+    background-image: url("../img/bottom-scroll.png");
+    background-size: 100% 100%;
+  }
 }

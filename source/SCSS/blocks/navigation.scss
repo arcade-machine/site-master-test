@@ -1,7 +1,8 @@
 .navigation {
   margin-right: auto;
+  position: relative;
   z-index: 2;
-  background-image: url("../img/nav--background.png");
+  background-image: url("../img/nav-background.png");
 }
 
 .navigation ul {
@@ -11,6 +12,10 @@
   justify-content: flex-start;
   list-style: none;
   z-index: 1;
+}
+
+.navigation__toggle {
+  display: none;
 }
 
 .navigation__item {
@@ -26,25 +31,89 @@
   font-family: "Open Sans Regular";
   font-size: 14px;
   line-height: 36px;
+  display: block;
   text-decoration: none;
   color: #ffffff;
+  z-index: 3;
 
   &:visited {
     color: #ffffff;
   }
 }
 
-.navigation__item:first-child .navigation__link {
-  position: relative;
-  z-index: 2;
+.navigation {
 
   &::before {
     content: "";
-    width: 100%;
+    width: 40vw;
     height: 100%;
     position: absolute;
-    bottom: 5px;
-    background-image: url("../img/nav--background.png");
-    z-index: 2;
+    right: -40vw;
+    bottom: 0;
+    background-image: url("../img/nav-background.png");
+  }
+}
+
+@media (max-width: 750px) {
+  .navigation {
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .no-js .navigation__toggle{
+    display: none;
+  }
+
+  .navigation ul {
+    display: none;
+    width: 100%;
+  }
+
+  .no-js ul {
+    display: block;
+  }
+
+  .navigation--open ul{
+    display: block;
+  }
+
+  .navigation__item {
+    text-align: center;
+    padding: 0;
+  }
+
+  .navigation__toggle {
+    width: 21px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+
+    &::before {
+      content: "";
+      width: 21px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../img/icons/icon-menu-open.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .navigation--open .navigation__toggle {
+    height: 21px;
+
+    &::before {
+      height: 21px;
+      background-image: url(../img/icons/icon-menu-close.svg);
+    }
   }
 }

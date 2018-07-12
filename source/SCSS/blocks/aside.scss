@@ -4,7 +4,9 @@
   padding-bottom: 75px;
   padding-left: 30px;
   padding-right: 25px;
+  border: 1px solid #d7d7d7;
   box-sizing: border-box;
+  position: relative;
   background-image: url("../img/content--background.png");
 }
 
@@ -30,4 +32,11 @@
   font-size: 13px;
   line-height: 20px;
   color: #959595;
+}
+
+@media (max-width: 750px) {
+  .aside {
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
