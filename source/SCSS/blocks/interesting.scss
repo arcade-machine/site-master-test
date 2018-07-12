@@ -1,9 +1,9 @@
 .interesting {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .interesting__header {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .interesting ul {
@@ -14,7 +14,7 @@
 
 .interesting__item {
   padding-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 
   &:last-child {
@@ -51,3 +51,20 @@
   line-height: 20px;
   color: #7e7e7e;
 }
+
+@media (max-width: 750px) {
+  .interesting ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interesting__item {
+    width: auto;
+  }
+
+  .interesting__header {
+    text-align: center;
+  }
+}
+

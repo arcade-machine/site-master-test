@@ -32,14 +32,8 @@ subscribeInput.addEventListener('invalid', function (evt) {
         });
         subscribe.addEventListener("click", function (evt) {
             evt.preventDefault();
-            if (subscribeInput.validity.valueMissing) {
-                subscribeInput.setCustomValidity('Обязательное поле!');
-            } else if (subscribeInput.checkValidity()) {
-                popupContent.innerHTML = "Спасибо за подписку, " + subscribeInput.value + "!";
-                popup.classList.add("pop-up--open");
-            } else {
-                subscribeInput.setCustomValidity('Введите правильный адрес!');
-            }
+            popupContent.innerHTML = "Спасибо за подписку, " + subscribeInput.value + "!";
+            popup.classList.add("pop-up--open");
         });
     }
 });
